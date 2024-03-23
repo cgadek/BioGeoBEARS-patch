@@ -163,10 +163,6 @@
 # 
 # 	} # end stochastic_mapping()
 
-wmr_test <- function() {
-    print("testing")
-}
-
 given_a_starting_state_get_prob_of_each_split_scenario <- function(index_Qmat_0based_of_starting_state=1, COO_weights_columnar, numstates=numstates, include_null_range=TRUE)
 	{
 	defaults='
@@ -991,7 +987,7 @@ stochastic_map_branch <- function(nodenum_at_top_of_branch, trtable, Qmat, state
 							{
 							break_condition = FALSE
 							# Double-check (null range OK at the end of the events, if end state is null)
-							if ( is.na(area_indices_0based_branch_top) && (mm == nrow(sorted_manual_table)) )
+							if ( is.na(area_indices_0based_branch_top[1]) && (mm == nrow(sorted_manual_table)) )
 								{
 								break_condition = TRUE
 								}
