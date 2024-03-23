@@ -163,10 +163,6 @@
 # 
 # 	} # end stochastic_mapping()
 
-wmr_test <- function() {
-    print("testing")
-}
-
 given_a_starting_state_get_prob_of_each_split_scenario <- function(index_Qmat_0based_of_starting_state=1, COO_weights_columnar, numstates=numstates, include_null_range=TRUE)
 	{
 	defaults='
