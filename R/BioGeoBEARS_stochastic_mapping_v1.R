@@ -987,9 +987,9 @@ stochastic_map_branch <- function(nodenum_at_top_of_branch, trtable, Qmat, state
 							{
 							break_condition = FALSE
 							txt = paste(
-							  area_indices_0based_branch_top,
-							  nrow(sorted_manual_table),
-							  mm
+							  "area_indices_0based_branch_top:", area_indices_0based_branch_top,
+							  "nrow(sorted_manual_table):", nrow(sorted_manual_table),
+							  "mm:", mm
 							)
 							cat(txt)
 							stop(txt)
